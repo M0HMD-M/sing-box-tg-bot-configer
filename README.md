@@ -1,16 +1,24 @@
 # sing-box-tg-bot-configer
 
-
 ## راه اندازی بات
 
-اگر نسخه های قبلی بات(بعد از ۱۴۰۲/۲/۲۵) رو دارید و فعاله می‌تونید به دستور زیر به روزش کنید و مجبور نباشید همه چی رو از اول راه‌اندازی کنید. 
+می‌تونید به دستور زیر به روزش کنید و مجبور نباشید همه چی رو از اول راه‌اندازی کنید. 
+
+1:
+
 ```bash
-curl -Lo /root/update.py https://raw.githubusercontent.com/hrostami/sb-server-configer/master/Update.py
+curl -Lo /root/update.py https://raw.githubusercontent.com/M0HMD-M/sing-box-tg-bot-configer/master/Update.py
+```
+2:
+```bash
 python3 update.py
 ```
+________________________________________
+## نصب اسکریپت
+
 اول فایل first.py رو میگیریم که توکن بات تلگرام رو به راحتی ست کنید و بقیه کار رو هم خودش خودکار انجام میده شما نیازی نیست کاری انجام بدید.
 ```bash
-curl -Lo /root/first.py https://raw.githubusercontent.com/hrostami/sb-server-configer/master/first.py
+curl -Lo /root/first.py https://raw.githubusercontent.com/M0HMD-M/sing-box-tg-bot-configer/master/first.py
 ```
 حالا بریم سراغ اجرا کردن اسکریپت. فقط لازمه که توکن بات تلگرام رو در ادامه این دستور وارد کنید، بقیه موارد (آی پی، پورت، ارسال پیام به کانال یا شما، آیدی کانال و بازه زمانی تجدید کانفیگ) رو بعدا تو تلگرام با دستور set/ تعریف میکنیم و هر وقت هم خواستیم میتونیم تغییرشون بدیم:
 ```bash
@@ -51,6 +59,3 @@ rm first.py
 /run netstat -tulnp
 /run reboot
 ```
-
-
-*با تشکر از همه کسایی که برای دسترسی آزاد به اینترنت زحمت میکشن از جمله سگارو عزیز و تیم IRCF*

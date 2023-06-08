@@ -11,12 +11,12 @@ if not os.path.exists('/root/configer'):
 os.system('curl -Lo /root/cleaner.py https://raw.githubusercontent.com/M0HMD-M/sing-box-tg-bot-configer/master/cleaner.py')
 os.system('python3 /root/cleaner.py')
 os.system('rm /root/cleaner.py')
-# Get sing-box v1.3 beta11 and place it in root
-print('--------> Downloading sing-box:\n\n\n\n')
-subprocess.run(["bash", "-c", "curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh | bash -s install 1.3-beta11"], check=True)
-print('--------Installing sing-box finished--------\n\n')
+# Get sing-box v1.3 beta12 and place it in root
+print('--------> 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒊𝒏𝒈 𝒔𝒊𝒏𝒈-𝒃𝒐𝒙:\n\n\n\n')
+subprocess.run(["bash", "-c", "curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh | bash -s install 1.3-beta12"], check=True)
+print('-------- 𝑰𝒏𝒔𝒕𝒂𝒍𝒍𝒊𝒏𝒈 𝒔𝒊𝒏𝒈-𝒃𝒐𝒙 𝒇𝒊𝒏𝒊𝒔𝒉𝒆𝒅 ✔ --------\n\n')
 
-print('--------> Creating user_data\n\n')
+print('--------> 𝑪𝒓𝒆𝒂𝒕𝒊𝒏𝒈 𝒖𝒔𝒆𝒓_𝒅𝒂𝒕𝒂 ^_^\n\n')
 user_data = {
     "chat_id":"me",
     "user_id":"",
@@ -61,23 +61,33 @@ if os.path.exists(default_config_path):
     os.system(f'rm {default_config_path}')
 os.system('systemctl restart configer')
 os.system('systemctl restart sing-box')
-print('--------Setting up Services finished --------\n\n')
+print('-------- 𝙎𝙚𝙩𝙩𝙞𝙣𝙜 𝙪𝙥 𝙎𝙚𝙧𝙫𝙞𝙘𝙚𝙨 𝙛𝙞𝙣𝙞𝙨𝙝𝙚𝙙 ✔ --------\n\n')
 
 s = '''
-  _____        _               _____                ___       _                       _                       
- | ____|_ __  (_) ___  _   _  |  ___| __ ___  ___  |_ _|_ __ | |_ ___ _ __ _ __   ___| |_                     
- |  _| | '_ \ | |/ _ \| | | | | |_ | '__/ _ \/ _ \  | || '_ \| __/ _ \ '__| '_ \ / _ \ __|                    
- | |___| | | || | (_) | |_| | |  _|| | |  __/  __/  | || | | | ||  __/ |  | | | |  __/ |_ _                   
- |_____|_| |_|/ |\___/ \__, | |_|  |_|  \___|\___| |___|_| |_|\__\___|_|  |_| |_|\___|\__( )                  
-            |__/       |___/                                                             |/                   
-                                _   _                                                                         
-                               | | | | ___  ___ _   _                                                         
-                               | |_| |/ _ \/ __| | | |                                                        
-                               |  _  | (_) \__ \ |_| |                                                        
-                               |_| |_|\___/|___/\__, |                                                        
-                                                |___/                                                         
+
+  _    _                   ______             __  
+ | |  | |                 |  ____|            \ \ 
+ | |__| | __ ___   _____  | |__ _   _ _ __   (_) |
+ |  __  |/ _` \ \ / / _ \ |  __| | | | '_ \    | |
+ | |  | | (_| |\ V /  __/ | |  | |_| | | | |  _| |
+ |_|  |_|\__,_| \_/ \___| |_|   \__,_|_| |_| (_) |
+                                              /_/ 
+                                                                                                         
 '''
 
 print(s)
-print('\n\n-------->  Send /start message to your telegram bot')
-print('\n\n-------->  After that Send /set  to set your prefrences')
+print('\n\n-------->  𝑺𝒆𝒏𝒅 /𝒔𝒕𝒂𝒓𝒕 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝒃𝒐𝒕')
+print('\n\n-------->  𝘈𝘧𝘵𝘦𝘳 𝘵𝘩𝘢𝘵 : ')
+print('\n\n-------->  𝗦𝗲𝗻𝗱 /𝘀𝗲𝘁  𝘁𝗼 𝘀𝗲𝘁 𝘆𝗼𝘂𝗿 𝗽𝗿𝗲𝗳𝗿𝗲𝗻𝗰𝗲𝘀')
+mmd = '''
+
+
+ ____    ____     ____     ____  ____   ____    ____   ______              ____    ____  
+|_   \  /   _|  .'    '.  |_   ||   _| |_   \  /   _| |_   _ `.           |_   \  /   _| 
+  |   \/   |   |  .--.  |   | |__| |     |   \/   |     | | `. \  ______    |   \/   |   
+  | |\  /| |   | |    | |   |  __  |     | |\  /| |     | |  | | |______|   | |\  /| |   
+ _| |_\/_| |_  |  `--'  |  _| |  | |_   _| |_\/_| |_   _| |_.' /           _| |_\/_| |_  
+|_____||_____|  '.____.'  |____||____| |_____||_____| |______.'           |_____||_____| 
+                                                                                         
+'''
+print(mmd)
